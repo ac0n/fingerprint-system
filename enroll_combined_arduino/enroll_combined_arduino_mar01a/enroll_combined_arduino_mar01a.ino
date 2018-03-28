@@ -28,7 +28,7 @@ LiquidCrystal lcd(12, 11, 7, 6, 5, 4); // initialize the library with the number
 void setup()
 { 
   analogWrite(8, Con);
-  Serial.begin(9600); // initialize the serial communications:
+  Serial.begin(57600); // initialize the serial communications:
   lcd.begin(16,2); 
   lcd.print("Waiting...");
 
@@ -40,7 +40,7 @@ pinMode(11, OUTPUT);
 
 pinMode(A0, INPUT);
 
-  finger.begin(57600); // set the data rate for the sensor serial port }
+  finger.begin(9600); // set the data rate for the sensor serial port }
 
 //Start digital scanning...
  
